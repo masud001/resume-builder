@@ -1,6 +1,6 @@
 <!-- @format -->
 
-# resume-builder
+# Resume-Builder
 
 1. Build your own resume by using your own style.
 2. download it as a pdf file.
