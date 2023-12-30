@@ -20,13 +20,15 @@ const App: React.FC = () => {
 	return (
 		<>
 			<h1 className='text-3xl font-bold underline text-cyan-500'>Hello resume builder.</h1>
-			<ContentEditable
-				className='content_editable'
-				tagName='pre'
-				html={state.htmlContent}
-				onChange={handleChange}
-				onBlur={() => console.log('this is the on blur')}
-			/>
+			<div className='content_etitable_wrapper'>
+				<ContentEditable
+					className='content_editable'
+					tagName='pre'
+					html={state.htmlContent}
+					onChange={handleChange}
+					onBlur={() => console.log('this is the on blur')}
+				/>
+			</div>
 		</>
 	);
 };
