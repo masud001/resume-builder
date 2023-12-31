@@ -13,9 +13,13 @@ const App: React.FC = () => {
 		htmlContent: '<h1>this is html <b>content</b> </h1>',
 	});
 	const handleChange = (event: any) => {
-		// setState(
-		// 	state.htmlContent: event.target.value
-		// );
+		setState((prevState) => ({
+			...prevState,
+			htmlContent: event.target.value,
+		}));
+	};
+	const handelEditable = () => {
+		console.log('this is the blur on click!');
 	};
 	return (
 		<>
@@ -26,7 +30,7 @@ const App: React.FC = () => {
 					tagName='pre'
 					html={state.htmlContent}
 					onChange={handleChange}
-					onBlur={() => console.log('this is the on blur')}
+					onBlur={handelEditable}
 				/>
 			</div>
 		</>
