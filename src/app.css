@@ -1,0 +1,5 @@
+.content_editable:focus-visible {
+    outline-style: dashed;
+    outline-color: #ff0000;
+    outline-width: 1px;
+}
