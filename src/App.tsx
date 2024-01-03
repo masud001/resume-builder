@@ -1,5 +1,5 @@
 /** @format */
-import { useState, MouseEvent } from 'react';
+import { useState, ChangeEvent } from 'react';
 import ContentEditable from 'react-contenteditable';
 import './app.css';
 interface ComponentState {
@@ -12,7 +12,7 @@ const App: React.FC = () => {
 		isEditable: true,
 		htmlContent: '<h1>this is html <b>content</b> </h1>',
 	});
-	const handleChange = (event: { target: HTMLInputElement }) => {
+	const handleChange = (event: any) => {
 		setState((prevState) => ({
 			...prevState,
 			htmlContent: event.target.value,
