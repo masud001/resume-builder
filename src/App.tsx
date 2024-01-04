@@ -1,5 +1,5 @@
 /** @format */
-import { useState, ChangeEvent } from 'react';
+import { useState } from 'react';
 import ContentEditable from 'react-contenteditable';
 import './app.css';
 interface ComponentState {
